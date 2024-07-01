@@ -4,8 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <header>
+        <img class="logo" src="assets/Logo.png" alt="Alura's logo">
+    </header>
+    <main class="encryptor">
+        <section class="input__buttons">
+            <textarea class="text" placeholder="Enter text here"></textarea>
+            <p class="information">
+                <img class="information__icon" src="assets/Group.png" alt="information logo">
+                 Only lowercase letters and no accents
+            </p>
+            <div class="buttons">
+                <button id="encrypt">Encrypt</button>
+                <button id="decrypt">Decrypt</button>
+            </div>
+        </section>
+        <div class="text__result">
+            <img class="text__result__image" src="assets/looking for something.png" alt="Person looking for something">
+            <p class="text__result__empty"><b>No message was found</b></p>
+            <p class="text__result__action">Enter the text you want to encrypt or decrypt</p>
+        </div>
+    </main>
 </body>
 </html>
