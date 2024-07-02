@@ -64,10 +64,40 @@ header {
     font-family: "Inter", sans-serif;
     font-size: 1rem;
     width: 42.5rem;
+    
 }
 
-#encrypt, #decrypt {
+#encrypt, #decrypt, #copy {
     width: 20.5rem;
+    border-radius: 1.5rem;
+    border: 0.1875rem solid white;
+    background-color: transparent;
+    color: white;
+}
+
+#copy {
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    margin-top: 11.8rem;
+    height: 4.1875rem;
+}
+
+#encrypt:hover {
+    background-color: #57FF92;
+    cursor: pointer;
+    color: black;
+}
+
+#decrypt:hover {
+    background-color: #EC2323;
+    cursor: pointer;
+    color: black;
+}
+
+#copy:hover {
+    background-color: white;
+    cursor: pointer;
+    color: black;
 }
 
 .text__result {
@@ -75,10 +105,23 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 2rem;
     background-color: #555151;
     height: 88vh;
-    width:25rem;
+    width:50vh;
     margin-top: -9rem;
     margin-right: 2.5rem;
     border-radius: 2rem;
+}
+
+.text__result__empty {
+    font-family: "Inter", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.text__result__action {
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    margin-top: -1rem;
 }
