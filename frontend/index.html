@@ -22,12 +22,12 @@
                 <button onclick="decryptText();" id="decrypt">Decrypt</button>
             </div>
         </section>
-        <div class="text__result"i>
+        <div class="text__result" id="text__result">
             <img class="text__result__image" id="image" src="assets/looking for something.png" alt="Person looking for something">
             <p class="text__result__empty" id="notFound"><b>No message was found</b></p>
             <p class="text__result__action" id="action">Enter the text you want to encrypt or decrypt</p>
-            <button id="copy" hidden disabled>Copy</button>
             <p id="encryptedText" hidden></p>
+            <button onclick="copyToClipboard();" id="copy" hidden disabled>Copy</button>
         </div>
     </main>
     <script src="scripts.js"></script>
