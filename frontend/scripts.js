@@ -14,8 +14,8 @@ function encryptText () {
 
     if (userText.trim() !== "") {
 
-    userText.toLowerCase();
-    userText.normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/ñ/g, 'ñ');
+    userText = userText.toLowerCase();
+    userText = userText.normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/ñ/g, 'ñ');
 
     let result = "";
 
@@ -44,7 +44,7 @@ function decryptText() {
     userText = document.getElementById("userText").value;
 
     if (userText.trim() !== "") {
-        userText.toLowerCase();
+        userText = userText.toLowerCase();
         userText = userText.normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/ñ/g, 'ñ');
 
         // Construir la expresión regular para buscar las palabras del diccionario de descifrado
@@ -65,6 +65,7 @@ function updateResultField(result) {
     let notFoundMessage = document.getElementById("notFound");
     let image = document.getElementById("image");
     let actionText = document.getElementById("action");
+    let textResultField = document.getElementById("text__result");
 
     encryptedText.textContent = result;
     encryptedText.removeAttribute("hidden");
@@ -75,4 +76,33 @@ function updateResultField(result) {
     notFoundMessage.hidden = true;
     image.hidden = true;
     actionText.hidden = true;
+
+    /*
+    width: 300px;
+            height: 150px;
+            border: 1px solid black;
+            overflow: hidden; /* Prueba también con overflow: auto; 
+            word-wrap: break-word;
+            word-break: break-all;
+    */
+
+    textResultField.style.justifyContent = "space-between";
+    encryptedText.style.overflow = "auto";
+    encryptedText.style.padding = "2rem";
+    encryptedText.style.width = "100%";
+    encryptedText.style.wordBreak = "break-all";
+    encryptedText.style.maxHeight = "40vh";
+    copyButton.style.height = "4.1875rem";
+    copyButton.style.marginBottom = "1.5rem";
+}
+
+function copyToClipboard() {
+    let encryptedText = document.getElementById("encryptedText");
+    let textToCopy = encryptedText.textContent;
+
+    navigator.clipboard.writeText(textToCopy).then(function() {
+        alert("Text copied to clipboard!");
+    }, function(err) {
+        alert("Failed to copy text: ", err);
+    });
 }
