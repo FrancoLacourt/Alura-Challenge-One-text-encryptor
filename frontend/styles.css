@@ -29,7 +29,7 @@ header {
 .input__buttons {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 3rem;
     margin-left: 15rem;
     margin-top: -3rem;
 }
@@ -78,8 +78,8 @@ header {
 #copy {
     font-family: "Inter", sans-serif;
     font-size: 1rem;
-    margin-top: 11.8rem;
     height: 4.1875rem;
+    max-width: 20.5rem;
 }
 
 #encrypt:hover {
@@ -108,7 +108,8 @@ header {
     gap: 2rem;
     background-color: #555151;
     height: 88vh;
-    width:50vh;
+    width:52vh;
+    max-width: 52vh;
     margin-top: -9rem;
     margin-right: 2.5rem;
     border-radius: 2rem;
