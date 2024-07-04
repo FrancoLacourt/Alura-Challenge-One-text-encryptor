@@ -1,2 +1,1 @@
-# Alura-Challenge-One-text-encryptor
- 
+<h1 align="center"> Text Encryptor </h1>
