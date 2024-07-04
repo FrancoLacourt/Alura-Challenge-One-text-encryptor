@@ -135,12 +135,12 @@ header {
         justify-content: space-between;
         align-items: start;
         gap: 4rem;
-        margin-top: 8%;
+        margin-top: 5rem;
         width: 100%;
     }
 
     .input__buttons {
-        margin-left: 2.5rem;
+        margin-left: 3rem;
         margin-top: -2rem;
         width: 95%;
     }
@@ -154,7 +154,7 @@ header {
     }
 
     #encrypt, #decrypt {
-        width: 100%;
+        width: 46%;
     }
 
     #copy {
@@ -165,9 +165,9 @@ header {
 
     .text__result {
         height: 25vh;
-        width: 95%;
+        width: 91%;
         margin-top: 0;
-        margin-left: 2rem;
+        margin-left: 3rem;
         max-width: none;
     }
 
@@ -180,6 +180,10 @@ header {
 
 @media (max-width: 31.25rem) {
 
+    header {
+        margin-left: -1.25rem;
+    }
+
     .encryptor {
         display: flex;
         flex-direction: column;
@@ -191,7 +195,7 @@ header {
     }
 
     .input__buttons {
-        margin-left: 2.5rem;
+        margin-left: 1.5rem;
         margin-top: -2rem;
         width: 95%;
     }
@@ -219,9 +223,8 @@ header {
 
     .text__result {
         height: 40vh;
-        width: 95%;
-        margin-top: 0;
-        margin-left: 2rem;
+        width: 90%;
+        margin-left: 1.25rem;
         max-width: none;
     }
 
