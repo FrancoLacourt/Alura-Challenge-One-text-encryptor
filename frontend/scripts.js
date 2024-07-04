@@ -15,7 +15,7 @@ function encryptText () {
     if (userText.trim() !== "") {
 
         if (/[A-Z]/.test(userText)) {
-            alert("Text must not contain uppercases.");
+            alert("Text must not contain upper case.");
             return;
         }
         if (/[\u00C0-\u017F]/.test(userText)) {
@@ -56,7 +56,7 @@ function decryptText() {
     if (userText.trim() !== "") {
 
         if (/[A-Z]/.test(userText)) {
-            alert("Text must not contain uppercases.");
+            alert("Text must not contain upper case.");
             return;
         }
         if (/[\u00C0-\u017F]/.test(userText)) {
