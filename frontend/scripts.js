@@ -14,6 +14,16 @@ function encryptText () {
 
     if (userText.trim() !== "") {
 
+        if (/[A-Z]/.test(userText)) {
+            alert("Text must not contain uppercases.");
+            return;
+        }
+        if (/[\u00C0-\u017F]/.test(userText)) {
+            alert("Text must not contain accents.");
+            return;
+        }
+
+
     userText = userText.toLowerCase();
     userText = userText.normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/ñ/g, 'ñ');
 
@@ -44,6 +54,17 @@ function decryptText() {
     userText = document.getElementById("userText").value;
 
     if (userText.trim() !== "") {
+
+        if (/[A-Z]/.test(userText)) {
+            alert("Text must not contain uppercases.");
+            return;
+        }
+        if (/[\u00C0-\u017F]/.test(userText)) {
+            alert("Text must not contain accents.");
+            return;
+        }
+
+
         userText = userText.toLowerCase();
         userText = userText.normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/ñ/g, 'ñ');
 
@@ -77,14 +98,6 @@ function updateResultField(result) {
     image.hidden = true;
     actionText.hidden = true;
 
-    /*
-    width: 300px;
-            height: 150px;
-            border: 1px solid black;
-            overflow: hidden; /* Prueba también con overflow: auto; 
-            word-wrap: break-word;
-            word-break: break-all;
-    */
 
     textResultField.style.justifyContent = "space-between";
     encryptedText.style.overflow = "auto";
