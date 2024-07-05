@@ -126,6 +126,33 @@ header {
     margin-top: -1rem;
 }
 
+footer {
+    height: 3.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    padding: 1rem 0;
+    background-color: #A0B6B4; /* Puedes ajustar el color de fondo aquí */
+    width: 100%;
+    position: relative; /* Asegura que el footer no esté fijo */
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+}
+
+#linkedinLogo {
+    border-radius: 0.5rem;
+}
+
 
 @media (max-width: 76.875rem) {
 
