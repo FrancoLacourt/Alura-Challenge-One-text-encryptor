@@ -76,7 +76,7 @@ function decryptText() {
         updateResultField(result);
 
     } else {
-        alert("El texto no puede estar vacío!");
+        alert("Text can't be null or empty!");
     }
 }
 
@@ -114,8 +114,20 @@ function copyToClipboard() {
     let textToCopy = encryptedText.textContent;
 
     navigator.clipboard.writeText(textToCopy).then(function() {
-        alert("Text copied to clipboard!");
+        showPopup("Text copied to clipboard!");
     }, function(err) {
-        alert("Failed to copy text: ", err);
+        showPopup("Failed to copy text: " + err);
     });
+}
+
+function showPopup(message) {
+    let popup = document.getElementById("popup");
+    popup.textContent = message;
+    popup.hidden = false;
+    popup.classList.add("show");
+
+    setTimeout(function() {
+        popup.classList.remove("show");
+        popup.hidden = true;
+    }, 1000); // El mensaje desaparecerá después de 3 segundos
 }
