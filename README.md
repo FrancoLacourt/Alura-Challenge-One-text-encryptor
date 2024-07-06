@@ -1,5 +1,7 @@
 <h1 align="center"> Text Encryptor </h1>
 
+Español:
+
 Esta es una aplicación web desarrollada con HTML, CSS y JavaScript que permite encriptar y desencriptar textos. La aplicación también permite copiar el texto encriptado o desencriptado.
 
 ## Características
@@ -8,7 +10,7 @@ Esta es una aplicación web desarrollada con HTML, CSS y JavaScript que permite 
 - **Desencriptar texto:** Transforma el texto encriptado de vuelta a su forma original.
 - **Copiar texto:** Permite copiar el resultado encriptado o desencriptado al portapapeles.
 
-**Las "llaves" de encriptación que utilizaremos son las siguientes:**
+**Las "llaves" de encriptación que utilizaré son las siguientes:**
 
 - La letra "e" es convertida para "enter"
 - La letra "i" es convertida para "imes"
@@ -37,3 +39,52 @@ Esta es una aplicación web desarrollada con HTML, CSS y JavaScript que permite 
 ## Diseño Responsivo
 
 La aplicación está diseñada para ser responsiva y se adapta a diferentes tamaños de pantalla, incluidos smartphones, tablets y dispositivos de escritorio.
+
+Puedes probar la página en el siguiente link: https://alura-challenge-one-text-encryptor.vercel.app/
+
+-----------------------------------------------------------------------------------------------------
+
+English:
+
+# Text Encryptor
+
+This is a web application developed with HTML, CSS, and JavaScript that allows you to encrypt and decrypt texts. The application also enables you to copy the encrypted or decrypted text.
+
+## Features
+
+- **Encrypt Text:** Transforms the entered text into an encrypted version.
+- **Decrypt Text:** Transforms the encrypted text back to its original form.
+- **Copy Text:** Allows you to copy the encrypted or decrypted result to the clipboard.
+
+**The encryption "keys" I will use are as follows:**
+
+- The letter **"e"** is converted to **"enter"**
+- The letter **"i"** is converted to **"imes"**
+- The letter **"a"** is converted to **"ai"**
+- The letter **"o"** is converted to **"ober"**
+- The letter **"u"** is converted to **"ufat"**
+
+## Technologies Used
+
+- **HTML:** For the structure of the page.
+- **CSS:** For the design and visual presentation.
+- **JavaScript:** For the functionality of encryption, decryption, and copying.
+
+## Project Structure
+
+- **index.html:** Contains the main structure of the page.
+- **styles.css:** Contains the CSS styles for visual presentation.
+- **scripts.js:** Contains the logic for encryption, decryption, and copying.
+
+## How to Use
+
+1. **Enter Text:** Type the text you want to encrypt or decrypt in the provided text area.
+2. **Encrypt or Decrypt:** Click the **Encrypt** button to encrypt the text or the **Decrypt** button to decrypt it.
+3. **Copy Text:** Once the text has been encrypted or decrypted, you can copy it by clicking the **Copy** button.
+
+## Responsive Design
+
+The application is designed to be responsive and adapts to different screen sizes, including smartphones, tablets, and desktop devices.
+
+You can try the page at the following link: https://alura-challenge-one-text-encryptor.vercel.app/
+
